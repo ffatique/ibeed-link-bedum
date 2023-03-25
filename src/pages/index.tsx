@@ -9,12 +9,9 @@ import imagem3 from '../../public/images/imagem3.png'
 import imagem4 from '../../public/images/imagem4.png'
 import imagem5 from '../../public/images/imagem5.png'
 import Link from 'next/link'
-import { RiTwitterLine, RiYoutubeLine, RiInstagramLine, RiLinkedinBoxLine } from 'react-icons/ri'
-import { MdOutlineMailOutline } from 'react-icons/md'
+import { CiTwitter, CiYoutube, CiInstagram, CiLinkedin, CiMail } from 'react-icons/ci'
 import { BsShare } from 'react-icons/bs'
 import { RWebShare } from "react-web-share"
-import Tippy from '@tippyjs/react'
-import 'tippy.js/dist/tippy.css'
 
 
 export default function Home(){
@@ -102,19 +99,19 @@ export default function Home(){
 
       <div className={styles.footerContainer}>
         <Link target="_blank" href="https://twitter.com/viniciusbedum">
-          <RiTwitterLine size={35} color="#d1d1d1d1" />
+          <CiTwitter size={35} color="#d1d1d1d1" />
         </Link>
         <Link target="_blank" href="https://www.youtube.com/channel/UCKzh65h2cAt9PO68UeGznJQ">
-          <RiYoutubeLine size={35} color="#d1d1d1d1" />
+          <CiYoutube size={35} color="#d1d1d1d1" />
         </Link>
         <Link target="_blank" href="https://www.instagram.com/viniciusbedum/">
-          <RiInstagramLine size={32} color="#d1d1d1d1" />
+          <CiInstagram size={32} color="#d1d1d1d1" />
         </Link>
         <Link target="_blank" href="https://www.linkedin.com/in/vin%C3%ADcius-bedum-060336186/">
-          <RiLinkedinBoxLine size={33} color="#d1d1d1d1" />
+          <CiLinkedin size={33} color="#d1d1d1d1" />
         </Link>
         <Link target="_blank" href="mailto:viniciusbedum@ibeed.xyz">
-          <MdOutlineMailOutline size={35} color="#d1d1d1d1" />
+          <CiMail size={35} color="#d1d1d1d1" />
         </Link>
       </div>
     
