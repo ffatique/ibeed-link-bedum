@@ -17,7 +17,6 @@ import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 
 
-
 export default function Home(){
 
   return (
@@ -38,11 +37,10 @@ export default function Home(){
           }}
           onClick={() => console.log("Shared Successfully!")}
         >
-          <Tippy content="Share Link">
-            <button>
-              <BsShare size={20} color="#b400cc" />
-            </button>
-          </Tippy>
+      
+          <button>
+            <BsShare size={20} color="#b400cc" />
+          </button>
 
         </RWebShare>       
       
@@ -58,46 +56,34 @@ export default function Home(){
         <h4>iBEED</h4>
 
         <div className={styles.buttons}>
-          <div className={styles.imagem}>
-            <Image src={imagem1} alt="link imagem 1"/>
-          </div>
-          <Link href="https://ibeed.xyz/">
-            <button>
-              Site
+          <Link target="_blank" href="https://ibeed.xyz/">
+            <button><Image src={imagem1} alt="link imagem 1"/>
+              <p>Site</p>
             </button>
           </Link>
         </div>
         
         <div className={styles.buttons}>
-          <div className={styles.imagem}>
-            <Image src={imagem2} alt="link imagem 2"/>
-          </div>
-          <Link href="https://ibeed.xyz/galeria/">
-            <button>
-              Aprenda Sobre Web3 e NFTs
+          <Link target="_blank" href="https://ibeed.xyz/galeria/">
+            <button><Image src={imagem2} alt="link imagem 2"/>
+              <p>Aprenda Sobre Web3 e NFTs</p>
             </button>
           </Link>
         </div>
 
         <div className={styles.buttons}>
-          <div className={styles.imagem}>
-            <Image src={imagem3} alt="link imagem 3"/>
-          </div>
-          <Link href="https://ibeed.xyz/mint-ibeed-identidade/">
-            <button>
-              Resgate seu iBEED Identidade (NFT)
+           <Link target="_blank" href="https://ibeed.xyz/mint-ibeed-identidade/">
+            <button><Image src={imagem3} alt="link imagem 3"/>
+              <p>Resgate seu iBEED Identidade (NFT)</p>
             </button>
           </Link>
         </div>
 
 
         <div className={styles.buttons}>
-          <div className={styles.imagem}>
-            <Image src={imagem4} alt="link imagem 4"/>
-          </div>
-          <Link href="https://discord.com/invite/2jhsuJvqPd">
-            <button>
-              Seja membro da nossa comunidade
+          <Link target="_blank" href="https://discord.com/invite/2jhsuJvqPd">
+            <button><Image src={imagem4} alt="link imagem 4"/>
+              <p>Seja membro da nossa comunidade</p>
             </button>
           </Link>
         </div>
@@ -105,12 +91,9 @@ export default function Home(){
         <p>iBEED Studios</p>
 
         <div className={styles.buttons}>
-          <div className={styles.imagem}>
-            <Image src={imagem5} alt="link imagem 5" />
-          </div>
-          <Link href="https://ibeed.xyz/studios">
-            <button>
-              Ajudamos sua marca entrar na Web3
+          <Link target="_blank" href="https://ibeed.xyz/studios">
+            <button><Image src={imagem5} alt="link imagem 5" />
+              <p>Ajudamos sua marca entrar na Web3</p>
             </button>
           </Link>
         </div>
@@ -118,20 +101,20 @@ export default function Home(){
       </main>
 
       <div className={styles.footerContainer}>
-        <Link href="https://twitter.com/viniciusbedum">
-          <RiTwitterLine size={35} color="#dadada" />
+        <Link target="_blank" href="https://twitter.com/viniciusbedum">
+          <RiTwitterLine size={35} color="#d1d1d1d1" />
         </Link>
-        <Link href="https://www.youtube.com/channel/UCKzh65h2cAt9PO68UeGznJQ">
-          <RiYoutubeLine size={35} color="#dadada" />
+        <Link target="_blank" href="https://www.youtube.com/channel/UCKzh65h2cAt9PO68UeGznJQ">
+          <RiYoutubeLine size={35} color="#d1d1d1d1" />
         </Link>
-        <Link href="https://www.instagram.com/viniciusbedum/">
-          <RiInstagramLine size={32} color="#dadada" />
+        <Link target="_blank" href="https://www.instagram.com/viniciusbedum/">
+          <RiInstagramLine size={32} color="#d1d1d1d1" />
         </Link>
-        <Link href="https://www.linkedin.com/in/vin%C3%ADcius-bedum-060336186/">
-          <RiLinkedinBoxLine size={33} color="#dadada" />
+        <Link target="_blank" href="https://www.linkedin.com/in/vin%C3%ADcius-bedum-060336186/">
+          <RiLinkedinBoxLine size={33} color="#d1d1d1d1" />
         </Link>
-        <Link href="mailto:viniciusbedum@ibeed.xyz">
-          <MdOutlineMailOutline size={35} color="#dadada" />
+        <Link target="_blank" href="mailto:viniciusbedum@ibeed.xyz">
+          <MdOutlineMailOutline size={35} color="#d1d1d1d1" />
         </Link>
       </div>
     
