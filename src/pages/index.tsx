@@ -13,8 +13,8 @@ import { RiTwitterLine, RiYoutubeLine, RiInstagramLine, RiLinkedinBoxLine } from
 import { MdOutlineMailOutline } from 'react-icons/md'
 import { BsShare } from 'react-icons/bs'
 import { RWebShare } from "react-web-share"
-import { Tooltip } from 'react-tooltip'
-import 'react-tooltip/dist/react-tooltip.css'
+import Tippy from '@tippyjs/react'
+import 'tippy.js/dist/tippy.css'
 
 
 
@@ -38,12 +38,14 @@ export default function Home(){
           }}
           onClick={() => console.log("Shared Successfully!")}
         >
-          <button className="my-anchor-element" data-tooltip-content="Share">
-            <BsShare size={20} color="#b400cc" />
-          </button>
-        </RWebShare>
-        
-        <Tooltip anchorSelect=".my-anchor-element" />
+          <Tippy content="Share Link">
+            <button>
+              <BsShare size={20} color="#b400cc" />
+            </button>
+          </Tippy>
+
+        </RWebShare>       
+      
       </div>
 
       <main className={styles.mainContainer}>
