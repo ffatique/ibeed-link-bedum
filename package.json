@@ -6,12 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "next": "13.2.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-share": "^4.4.1",
+    "react-share-social": "^0.1.55",
+    "react-web-share": "^2.0.2"
   },
   "devDependencies": {
     "@types/node": "18.15.9",
@@ -19,6 +23,9 @@
     "@types/react-dom": "18.0.11",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "react-icons": "^4.8.0",
+    "react-tooltip": "^5.10.1",
+    "sass": "^1.60.0",
     "typescript": "5.0.2"
   }
 }
