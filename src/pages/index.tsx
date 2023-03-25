@@ -33,7 +33,7 @@ export default function Home(){
         <RWebShare
           data={{
             text: "Link | Vinicíus Bedum",
-            url: "http://localhost:3000/",
+            url: "",
             title: "Link | Vinicíus Bedum",
           }}
           onClick={() => console.log("Shared Successfully!")}
