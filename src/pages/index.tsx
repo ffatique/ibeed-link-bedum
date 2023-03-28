@@ -21,9 +21,9 @@ export default function Home(){
   return (
     <div className={styles.container}>
       <Head>
-        <title>Link | Vinícius Bedum</title>
+        <title>Linkeh | Vinícius Bedum</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta content="#000000" name="theme-color"></meta>
+        <meta content="#515AFF" name="theme-color"></meta>
       </Head>
 
       <div className={styles.shareContainer}>
@@ -53,7 +53,7 @@ export default function Home(){
         <h3>Explico Web3 e NFTs em sua essência.</h3>
         <div className={styles.ensContainer}>
           <Image src={ens} alt="Logo ENS" />
-          <p>viciniusbedum.eth</p>
+          <p>viniciusbedum.eth</p>
         </div>
         
         <h4>iBEED</h4>
