@@ -8,6 +8,8 @@ import imagem2 from '../../public/images/imagem2.png'
 import imagem3 from '../../public/images/imagem3.png'
 import imagem4 from '../../public/images/imagem4.png'
 import imagem5 from '../../public/images/imagem5.png'
+import ens from '../../public/images/ens.png'
+import logo from '../../public/images/logo.png'
 import Link from 'next/link'
 import { CiTwitter, CiYoutube, CiInstagram, CiLinkedin, CiMail } from 'react-icons/ci'
 import { BsShare } from 'react-icons/bs'
@@ -36,7 +38,7 @@ export default function Home(){
         >
       
           <button>
-            <BsShare size={20} color="#b400cc" />
+            <BsShare size={20} color="#515AFF" />
           </button>
 
         </RWebShare>       
@@ -49,6 +51,10 @@ export default function Home(){
 
         <h2>Vinícius Bedum</h2>
         <h3>Explico Web3 e NFTs em sua essência.</h3>
+        <div className={styles.ensContainer}>
+          <Image src={ens} alt="Logo ENS" />
+          <p>viciniusbedum.eth</p>
+        </div>
         
         <h4>iBEED</h4>
 
@@ -114,7 +120,12 @@ export default function Home(){
           <CiMail size={35} color="#d1d1d1d1" />
         </Link>
       </div>
-    
+
+      <div className={styles.linkehContainer}>
+        <Link target="_blank" href="https://twitter.com/viniciusbedum">
+          <Image src={logo} alt="Logo Linkeh" />
+        </Link>
+      </div>    
     </div>
   )
 }
