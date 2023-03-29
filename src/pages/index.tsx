@@ -10,6 +10,7 @@ import imagem4 from '../../public/images/imagem4.png'
 import imagem5 from '../../public/images/imagem5.png'
 import ens from '../../public/images/ens.png'
 import logo from '../../public/images/logo.png'
+import lens from '../../public/images/lens.png'
 import Link from 'next/link'
 import { CiTwitter, CiYoutube, CiInstagram, CiLinkedin, CiMail } from 'react-icons/ci'
 import { BsShare } from 'react-icons/bs'
@@ -118,6 +119,9 @@ export default function Home(){
         </Link>
         <Link target="_blank" href="mailto:viniciusbedum@ibeed.xyz">
           <CiMail size={35} color="#d1d1d1d1" />
+        </Link>
+        <Link target="_blank" href="https://lenster.xyz/u/viniciusbedum">
+          <Image src={lens} alt="Logo Lens" />
         </Link>
       </div>
 
