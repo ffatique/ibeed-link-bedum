@@ -10,11 +10,9 @@ import { CiTwitter, CiYoutube, CiInstagram, CiLinkedin, CiMail } from 'react-ico
 import { BsShare } from 'react-icons/bs'
 import { RWebShare } from "react-web-share"
 import { VscGithub } from 'react-icons/vsc'
-import { GetServerSideProps } from 'next'
 
 
 interface Props {
-  bmode: string,
   bname: string,
   btitle: string,
   bens: string,
@@ -43,8 +41,7 @@ interface Props {
   bavatarFive: string
 }
 
-
-export default function Home({bmode, bname, btitle, bens, blinkOne, blinkTwo, blinkThree, blinkFour, blinkFive, btitleOne, btitleTwo, btitleThree, btitleFour,
+export default function Home({ bname, btitle, bens, blinkOne, blinkTwo, blinkThree, blinkFour, blinkFive, btitleOne, btitleTwo, btitleThree, btitleFour,
   btitleFive, blens, btwitter, byoutube, binstagram, blinkedin, bgithub, bemail, bavatarUrl, bavatarOne, bavatarTwo, bavatarThree, bavatarFour, bavatarFive}: Props){
 
   return (
@@ -216,7 +213,7 @@ export default function Home({bmode, bname, btitle, bens, blinkOne, blinkTwo, bl
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+/*export const getServerSideProps: GetServerSideProps = async (context) => {
   
   const { bmode, bname, btitle, bens, blinkOne, blinkTwo, blinkThree, blinkFour, blinkFive, btitleOne, btitleTwo, btitleThree, btitleFour,
     btitleFive, blens, btwitter, byoutube, binstagram, blinkedin, bgithub, bemail, bavatarUrl, bavatarOne, bavatarTwo, bavatarThree, bavatarFour, bavatarFive } = context.query;
@@ -252,5 +249,5 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       bavatarFive
     },
   };
-};
+};*/
 
