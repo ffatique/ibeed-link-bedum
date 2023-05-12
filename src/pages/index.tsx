@@ -12,37 +12,35 @@ import { RWebShare } from "react-web-share"
 import { VscGithub } from 'react-icons/vsc'
 
 
-interface Props {
-  bname: string,
-  btitle: string,
-  bens: string,
-  blinkOne: string,
-  blinkTwo: string,
-  blinkThree: string,
-  blinkFour: string,
-  blinkFive: string,
-  btitleOne: string,
-  btitleTwo: string,
-  btitleThree: string,
-  btitleFour: string,
-  btitleFive: string,
-  blens: string,
-  btwitter: string,
-  byoutube: string,
-  binstagram: string,
-  blinkedin: string,
-  bgithub: string,
-  bemail: string,
-  bavatarUrl: string,
-  bavatarOne: string,
-  bavatarTwo: string,
-  bavatarThree: string,
-  bavatarFour: string,
-  bavatarFive: string
-}
 
-export default function Home({ bname, btitle, bens, blinkOne, blinkTwo, blinkThree, blinkFour, blinkFive, btitleOne, btitleTwo, btitleThree, btitleFour,
-  btitleFive, blens, btwitter, byoutube, binstagram, blinkedin, bgithub, bemail, bavatarUrl, bavatarOne, bavatarTwo, bavatarThree, bavatarFour, bavatarFive}: Props){
+export default function Home(){
+
+  var bname = ""
+  var btitle = ""
+  var bens = ""
+  var blinkOne = ""
+  var blinkTwo = ""
+  var blinkThree = ""
+  var blinkFour = ""
+  var blinkFive = ""
+  var btitleOne = ""
+  var btitleTwo = ""
+  var btitleThree = ""
+  var btitleFour = ""
+  var btitleFive = ""
+  var blens = ""
+  var btwitter = ""
+  var byoutube = ""
+  var binstagram = ""
+  var blinkedin = ""
+  var bgithub = ""
+  var bemail = ""
+  var bavatarUrl = ""
+  var bavatarOne = ""
+  var bavatarTwo = ""
+  var bavatarThree = ""
+  var bavatarFour = ""
+  var bavatarFive = ""
 
   return (
     <div className={styles.container}>
@@ -212,42 +210,3 @@ export default function Home({ bname, btitle, bens, blinkOne, blinkTwo, blinkThr
     </div>
   )
 }
-
-/*export const getServerSideProps: GetServerSideProps = async (context) => {
-  
-  const { bmode, bname, btitle, bens, blinkOne, blinkTwo, blinkThree, blinkFour, blinkFive, btitleOne, btitleTwo, btitleThree, btitleFour,
-    btitleFive, blens, btwitter, byoutube, binstagram, blinkedin, bgithub, bemail, bavatarUrl, bavatarOne, bavatarTwo, bavatarThree, bavatarFour, bavatarFive } = context.query;
-
-  return {
-    props: {
-      bmode,
-      bname,
-      btitle,
-      bens,
-      blinkOne,
-      blinkTwo,
-      blinkThree,
-      blinkFour,
-      blinkFive,
-      btitleOne,
-      btitleTwo,
-      btitleThree,
-      btitleFour,
-      btitleFive,
-      blens,
-      btwitter,
-      byoutube,
-      binstagram,
-      blinkedin,
-      bgithub,
-      bemail,
-      bavatarUrl,
-      bavatarOne,
-      bavatarTwo,
-      bavatarThree,
-      bavatarFour,
-      bavatarFive
-    },
-  };
-};*/
-
