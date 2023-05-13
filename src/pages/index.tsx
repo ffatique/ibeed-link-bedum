@@ -30,7 +30,7 @@ export default function Home(){
           data={{
             text: `Linkeh | ${"bname"}`,
             url: "",
-            title: `Linkeh | ${"bname"}`,
+            title: `Linkeh | ${"bsecondName"}`,
           }}
           onClick={() => console.log("Shared Successfully!")}
         >
@@ -48,7 +48,7 @@ export default function Home(){
         <Image src={"bavatarUrl"} width={120} height={120} alt={`Foto ${"bname"}`} />
 
         <h2>{"bname"}</h2>
-        <h3>{"btitle"}</h3>
+        <h3>{"bsecondName"}</h3>
         <div className={styles.ensContainer}>
           <Image src={ens} alt="Logo ENS" />
           <p>{"bens"}</p>
