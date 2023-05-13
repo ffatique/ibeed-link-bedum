@@ -14,7 +14,18 @@ import { VscGithub } from 'react-icons/vsc'
 
 export default function Home(){
 
-  
+  var blinkOne = "blinkOne"
+  var blinkTwo = "blinkTwo"
+  var blinkThree = "blinkThree"
+  var blinkFour = "blinkFour"
+  var blinkFive = "blinkFive"
+  var blens = "blens"
+  var btwitter = "btwitter"
+  var byoutube = "byoutube"
+  var binstagram = "binstagram"
+  var blinkedin = "blinkedin"
+  var bgithub = "bgithub"
+  var bemail = "bemail"
 
   return (
     <div className={styles.container}>
@@ -54,7 +65,7 @@ export default function Home(){
           <p>{"bens"}</p>
         </div>
         
-        {"blinkOne" === "null"?
+        {blinkOne == "null"?
           <></>
         : 
           <div className={styles.buttons}>
@@ -66,7 +77,7 @@ export default function Home(){
           </div>
         }
         
-        {"blinkTwo" === "null"?
+        {blinkTwo == "null"?
           <></>
         : 
           <div className={styles.buttons}>
@@ -78,7 +89,7 @@ export default function Home(){
           </div>
         }
 
-        {"blinkThree"=== "null"?
+        {blinkThree == "null"?
           <></>
         : 
           <div className={styles.buttons}>
@@ -90,7 +101,7 @@ export default function Home(){
           </div>
         }
 
-        {"blinkFour" === "null"?
+        {blinkFour == "null"?
           <></>
         : 
           <div className={styles.buttons}>
@@ -102,7 +113,7 @@ export default function Home(){
           </div>
        }
 
-        {"blinkFive" === "null"?
+        {blinkFive == "null"?
           <></>
         : 
           <div className={styles.buttons}>
@@ -118,7 +129,7 @@ export default function Home(){
 
       <div className={styles.footerContainer}>
         
-        {"btwitter" === "null"?
+        {btwitter == "null"?
           <></>
         :
           <Link target="_blank" href={"btwitter"}>
@@ -126,7 +137,7 @@ export default function Home(){
           </Link>
         }
 
-        {"byoutube" === "null"?
+        {byoutube == "null"?
           <></>
         :
           <Link target="_blank" href={"byoutube"}>
@@ -134,7 +145,7 @@ export default function Home(){
           </Link>
         }
 
-        {"binstagram" === "null"?
+        {binstagram == "null"?
           <></>
         :
           <Link target="_blank" href={"binstagram"}>
@@ -142,7 +153,7 @@ export default function Home(){
           </Link>
         }
 
-        {"blinkedin" === "null"?
+        {blinkedin == "null"?
           <></>
         :
           <Link target="_blank" href={"blinkedin"}>
@@ -150,7 +161,7 @@ export default function Home(){
           </Link>
         }
 
-        {"bgithub" === "null"?
+        {bgithub == "null"?
           <></>
         :
           <Link target="_blank" href={"bgithub"}>
@@ -158,7 +169,7 @@ export default function Home(){
           </Link>
         }
         
-        {"bemail" === "null"?
+        {bemail == "null"?
           <></>
         :
           <Link target="_blank" href={"bemail"}>
@@ -166,7 +177,7 @@ export default function Home(){
           </Link>
         }
         
-        {"blens" === "null"?
+        {blens == "null"?
           <></>
         :
           <Link target="_blank" href={"blens"}>
