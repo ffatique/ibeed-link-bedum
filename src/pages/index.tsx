@@ -12,40 +12,14 @@ import { RWebShare } from "react-web-share"
 import { VscGithub } from 'react-icons/vsc'
 
 
-
 export default function Home(){
 
-  var bname = ""
-  var btitle = ""
-  var bens = ""
-  var blinkOne = ""
-  var blinkTwo = ""
-  var blinkThree = ""
-  var blinkFour = ""
-  var blinkFive = ""
-  var btitleOne = ""
-  var btitleTwo = ""
-  var btitleThree = ""
-  var btitleFour = ""
-  var btitleFive = ""
-  var blens = ""
-  var btwitter = ""
-  var byoutube = ""
-  var binstagram = ""
-  var blinkedin = ""
-  var bgithub = ""
-  var bemail = ""
-  var bavatarUrl = ""
-  var bavatarOne = ""
-  var bavatarTwo = ""
-  var bavatarThree = ""
-  var bavatarFour = ""
-  var bavatarFive = ""
+  
 
   return (
     <div className={styles.container}>
       <Head>
-        <title>Linkeh | {bname}</title>
+        <title>Linkeh | {"bname"}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta content="#515AFF" name="theme-color"></meta>
       </Head>
@@ -54,9 +28,9 @@ export default function Home(){
         
         <RWebShare
           data={{
-            text: `Linkeh | ${bname}`,
+            text: `Linkeh | ${"bname"}`,
             url: "",
-            title: `Linkeh | ${bname}`,
+            title: `Linkeh | ${"bname"}`,
           }}
           onClick={() => console.log("Shared Successfully!")}
         >
@@ -71,70 +45,70 @@ export default function Home(){
 
       <main className={styles.mainContainer}>
 
-        <Image src={bavatarUrl} width={120} height={120} alt={`Foto ${bname}`} />
+        <Image src={"bavatarUrl"} width={120} height={120} alt={`Foto ${"bname"}`} />
 
-        <h2>{bname}</h2>
-        <h3>{btitle}</h3>
+        <h2>{"bname"}</h2>
+        <h3>{"btitle"}</h3>
         <div className={styles.ensContainer}>
           <Image src={ens} alt="Logo ENS" />
-          <p>{bens}</p>
+          <p>{"bens"}</p>
         </div>
         
-        {blinkOne == null?
+        {"blinkOne" == null?
           <></>
         : 
           <div className={styles.buttons}>
-            <Link target="_blank" href={blinkOne}>
-              <button><Image src={bavatarOne} width={40} height={40} alt={'Logo Linkeh One'}/>
-                <p>{btitleOne}</p>
+            <Link target="_blank" href={"blinkOne"}>
+              <button><Image src={"bavatarOne"} width={40} height={40} alt={'Logo Linkeh One'}/>
+                <p>{"btitleOne"}</p>
               </button>
             </Link>
           </div>
         }
         
-        {blinkTwo == null?
+        {"blinkTwo" == null?
           <></>
         : 
           <div className={styles.buttons}>
-            <Link target="_blank" href={blinkTwo}>
-              <button><Image src={bavatarTwo} width={40} height={40} alt={'Logo Linkeh Two'}/>
-                <p>{btitleTwo}</p>
+            <Link target="_blank" href={"blinkTwo"}>
+              <button><Image src={"bavatarTwo"} width={40} height={40} alt={'Logo Linkeh Two'}/>
+                <p>{"btitleTwo"}</p>
               </button>
             </Link>
           </div>
         }
 
-        {blinkThree == null?
+        {"blinkThree" == null?
           <></>
         : 
           <div className={styles.buttons}>
-            <Link target="_blank" href={blinkThree}>
-              <button><Image src={bavatarThree} width={40} height={40} alt={'Logo Linkeh Three'}/>
-                <p>{btitleThree}</p>
+            <Link target="_blank" href={"blinkThree"}>
+              <button><Image src={"bavatarThree"} width={40} height={40} alt={'Logo Linkeh Three'}/>
+                <p>{"btitleThree"}</p>
               </button>
             </Link>
           </div>
         }
 
-        {blinkFour== null?
+        {"blinkFour" == null?
           <></>
         : 
           <div className={styles.buttons}>
-            <Link target="_blank" href={blinkFour}>
-              <button><Image src={bavatarFour} width={40} height={40} alt={'Logo Linkeh Four'}/>
-                <p>{btitleFour}</p>
+            <Link target="_blank" href={"blinkFour"}>
+              <button><Image src={"bavatarFour"} width={40} height={40} alt={'Logo Linkeh Four'}/>
+                <p>{"btitleFour"}</p>
               </button>
             </Link>
           </div>
        }
 
-        {blinkFive == null?
+        {"blinkFive" == null?
           <></>
         : 
           <div className={styles.buttons}>
-            <Link target="_blank" href={blinkFive}>
-              <button><Image src={bavatarFive} width={40} height={40} alt={'Logo Linkeh Five'}/>
-                <p>{btitleFive}</p>
+            <Link target="_blank" href={"blinkFive"}>
+              <button><Image src={"bavatarFive"} width={40} height={40} alt={'Logo Linkeh Five'}/>
+                <p>{"btitleFive"}</p>
               </button>
             </Link>
           </div>
@@ -144,58 +118,58 @@ export default function Home(){
 
       <div className={styles.footerContainer}>
         
-        {btwitter == null?
+        {"btwitter" == null?
           <></>
         :
-          <Link target="_blank" href={btwitter}>
+          <Link target="_blank" href={"btwitter"}>
             <CiTwitter size={35} color="#d1d1d1d1" />
           </Link>
         }
 
-        {byoutube== null?
+        {"byoutube" == null?
           <></>
         :
-          <Link target="_blank" href={byoutube}>
+          <Link target="_blank" href={"byoutube"}>
             <CiYoutube size={35} color="#d1d1d1d1" />
           </Link>
         }
 
-        {binstagram == null?
+        {"binstagram" == null?
           <></>
         :
-          <Link target="_blank" href={binstagram}>
+          <Link target="_blank" href={"binstagram"}>
             <CiInstagram size={32} color="#d1d1d1d1" />
           </Link>
         }
 
-        {blinkedin == null?
+        {"blinkedin" == null?
           <></>
         :
-          <Link target="_blank" href={blinkedin}>
+          <Link target="_blank" href={"blinkedin"}>
             <CiLinkedin size={33} color="#d1d1d1d1" />
           </Link>
         }
 
-        {bgithub == null?
+        {"bgithub" == null?
           <></>
         :
-          <Link target="_blank" href={bgithub}>
+          <Link target="_blank" href={"bgithub"}>
             <VscGithub size={33} color="#d1d1d1d1" />
           </Link>
         }
         
-        {bemail == null?
+        {"bemail" == null?
           <></>
         :
-          <Link target="_blank" href={bemail}>
+          <Link target="_blank" href={"bemail"}>
             <CiMail size={35} color="#d1d1d1d1" />
           </Link>
         }
         
-        {blens == null?
+        {"blens" == null?
           <></>
         :
-          <Link target="_blank" href={blens}>
+          <Link target="_blank" href={"blens"}>
             <Image src={lens} alt="Logo Lens" />
           </Link>
         }
